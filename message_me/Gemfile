@@ -45,6 +45,12 @@ gem "bootsnap", require: false
 # erb formatter
 gem 'erb-formatter'
 
+# Semantic UI
+gem 'semantic-ui-sass'
+
+# jQuery dependency for semantic UI
+gem 'jquery-rails'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
