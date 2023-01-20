@@ -10,13 +10,13 @@ class SessionsController < ApplicationController
             flash[:success] = "You have successfully logged in"
             redirect_to root_path
         else
-            flash.now[:error] = "Your credentials do not match our records"
-            render 'new'
+            flash[:error] = "You have successfully logged in"
+            redirect_back fallback_location: login_path
         end
     end
 
     def destroy
-        session[:user_id] = null
+        session[:user_id] = nil
         flash[:success] = "You have successfully logged out!"
         redirect_to login_path
     end

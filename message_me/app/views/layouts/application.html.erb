@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>MessageMe</title>
-    <%= favicon_link_tag %>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>MessageMe</title>
+  <%= favicon_link_tag %>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
 
-  </head>
+</head>
 
-  <body>
-    <div class="ui inverted menu">
-      <div class="ui container">
-        <%= render 'partials/navigation' %>
-      </div>
+<body>
 
-    </div>
+<div class="ui inverted menu">
+  <div class="ui container">
+    <%= render 'partials/navigation' %>
+  </div>
 
-    <div class="ui container">
-      <h2 class="ui center aligned header">Welcome to MessageMe-  a complete Chat App</h2>
-      <h4 class="ui center aligned medium icon header">
-        <i class="circular orange coffee icon"></i>
-        Say Something
-      </h4>
-      <%= yield %>
-    </div>
-  </body>
+</div>
+
+<div class="ui container">
+  <%= render 'partials/messages' %>
+  <h2 class="ui center aligned header">Welcome to MessageMe- a complete Chat App</h2>
+  <h4 class="ui center aligned medium icon header">
+    <i class="circular orange coffee icon"></i>
+    Say Something
+  </h4>
+  <%= yield %>
+</div>
+</body>
 </html>
