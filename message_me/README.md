@@ -1,24 +1,4 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a chat message written in ruby using action cable.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<img width="1704" alt="Screenshot 2023-01-20 at 02 13 10" src="https://user-images.githubusercontent.com/26106822/213603464-1f62cd50-ed2e-4f28-880b-085516e1e7c4.png">
