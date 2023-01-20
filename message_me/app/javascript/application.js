@@ -12,8 +12,20 @@ window.scroll_bottom = function () {
         messagesContainer.scrollTop(messagesContainer[0].scrollHeight)
     }
 }
+
+window.submitMessage = function () {
+    const messageBody = $('#message_body');
+    messageBody.on('keydown', function (e) {
+        if(e.keyCode === 13) {
+            $('button').click()
+            e.target.value = ""
+        }
+    })
+}
 $(document).on('turbo:load', function () {
-    scroll_bottom()
+    scroll_bottom();
+    submitMessage();
+
     $('.ui.dropdown').dropdown();
 
     $('.message .close').on('click', function () {
